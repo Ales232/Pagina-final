@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>El hogar confortable</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("panes1.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">CASA</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ACERCA DE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abierto de 5 pm to 11pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>EL HOGAR CONFORTABLE</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>EL HOGAR CONFORTABLE</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Ver el menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">EL MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Cafe</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Postres');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Postres</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Merienda');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Merienda</div>
+      </a>
+    </div>
+
+    <div id="Cafe" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Espresso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$23.50</span></h1>
+      <p class="w3-text-grey">Cafe caliente preparado con crema</p>
+      <hr>
+   
+      <h1><b>Americano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.00</span></h1>
+      <p class="w3-text-grey">Cafe caliente de olla</p>
+      <hr>
+      
+      <h1><b>Capuccino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.00</span></h1>
+      <p class="w3-text-grey">Una combinacion de espresso, leche vaporizada y espuma de leche en partes iguales</p>
+      <hr>
+
+      <h1><b>Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$35.00</span></h1>
+      <p class="w3-text-grey">consta de 2 onzas de cafe espresso y 3 onzas de leche al vapor</p>
+      <hr>
+
+      <h1><b>Moka</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$33.00</span></h1>
+      <p class="w3-text-grey">Union de cafe y chocolate, es de origen italiano</p>
+      <hr>
+
+      <h1><b>Caramel macchiato</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <p class="w3-text-grey">Combinar el espresso, caramelo y la espuma de leche o leche vaporizada, agregando vainilla</p>
+    </div>
+
+    <div id="Postres" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Maccarrones de chocolate</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$125.00</span></h1>
+      <p class="w3-text-grey">4 Piezas de macarrones con chocolate derretido encima</p>
+      <hr>
+   
+      <h1><b>Red Velvet Whoopie Pies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$140.00</span></h1>
+      <p class="w3-text-grey">Panecillos sabor a cereza con cubierta de de azucar glass</p>
+      <hr>
+      
+      <h1><b>Tartaleta de riccotta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$190.00</span></h1>
+      <p class="w3-text-grey">Tarta dulce con sabor a elegir: Chocolate, fresa, maracuya y rompope</p>
+      <hr>
+
+      <h1><b>Brownie clasico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$120.00</span></h1>
+      <p class="w3-text-grey">Delcioso panecito esponjoso y chicloso sabor a chocolate amargo</p>
+    </div>
+
+
+    <div id="Merienda" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Tostadas con tomate y mozzarella</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$35.00</span></h1>
+      <p class="w3-text-grey">Tostada grande con deliciosa combinacion de sabores</p>
+      <hr>
+   
+      <h1><b>Enrollado de pavo y aguacate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$215.00</span></h1>
+      <p class="w3-text-grey">Pavo ahumado en rollitos primavera</p>
+      <hr>
+      
+      <h1><b>Emparedado de salmon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$130.00</span></h1>
+      <p class="w3-text-grey">Salmon ahumado con pan esponjoso</p>
+      <hr>
+      
+      <h1><b>Pates vegetales</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Pate con garbanzos, zanahoria y calabaza</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Acerca de</h1>
+    <p>El hogar confortable es una cafeteria donde puedes relajarte por el ambiente calido y tranquilo, 
+        a parte de disfrutar al mismo tiempo nuestros panes recien horneados con un delicioso cafe caliente
+   </p>
+    <p><strong>The Chef?</strong> Sr. Gerardo Reyes Cerritos<img src="bar.jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    
+    <img src="cafeteria1.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horario</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes & Martes CERRADO</p>
+        <p>Miercoles 17:00 - 23:00</p>
+        <p>Jueves 17:00 - 23:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Viernes 17:00 - 00:00</p>
+        <p>Sabado 17:00  - 00:00</p>
+        <p>Domingo 17:00 - 00:00</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+    <p>Contactanos al 322-102-0248</p>
+    <p> Visitanos</p>
+    <p class="w3-xxlarge"><strong>Reservas</strong> Completa los campos y envia tu reserva</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cuantas personas" required name="Personas"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Fecha y hora" required name="date" value="2020-06-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje o comentario" required name="Mensaje"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR</button></p>
+    </form>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Coral Alejandra Ramirez Martinez</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
